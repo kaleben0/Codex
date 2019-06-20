@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="manifest" href="../images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<title>City of Heroes -  Comics</title>
+<link rel="stylesheet" type="text/css" href="../codex.css">
+<script language="javascript" type="text/javascript">
+     var images = new Array()
+     var images2 = new Array()
+     var images3 = new Array()
+
+     images[0] = "../images/cov_large.png";
+     images[1] = "../images/coh_gr_large.png";
+     images[2] = "../images/coh_large.png";
+     images2[0] = "../images/city_back_blue.png";
+     images2[1] = "../images/city_back_red.png";
+     images2[2] = "../images/city_back_gr.png";
+     images3[0] = "linear-gradient(#000428, #004e92)";
+     images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
+     images3[2] = "linear-gradient(#333333, #c9ad1c)";
+
+     setInterval("changeImage()", 8000);
+     setInterval("changeImage2()", 8000);
+     setInterval("changeImage3()", 8000);
+
+     var x=0;
+
+     	function changeImage()
+     {
+		$("#switch").fadeOut(1);
+                document.getElementById("switch").src=images[x]
+		$("#switch").fadeIn(1600);
+                x++;
+		if (images.length == x) 
+                {
+                    x = 0;
+                }
+     }
+	function changeImage2()
+     {   
+		document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+		$("#switch2").fadeIn(1600);
+              
+              }
+	function changeImage3()
+     {  
+		$('.comic_display').css("background", images3[x]);
+	     }
+</script>
+ 
+</head>
+
+<body id="switch2">
+<div class="main_title" onclick="window.open('../','_self')" ><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
+<div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
+<br/>
+<br/>
+<hr/>
+<div class="page_header">Comics</div>
+<hr/>
+<br/>
+<div class="sub_header">Special Editions</div>
+<br/>
+<div class="body_display">
+
+<div class="comic_display" onclick="window.open('./pdf/midnight_hour.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/midnight_hour.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">The Midnight Hour</div>
+</div>
+<div class="comic_display" onclick="window.open('./pdf/comic_wedding_000.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_wedding_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Wedding Special</div>
+</div>
+</div>
+<br/>
+<div class="sub_header">Top Cow Comics</div>
+<br/>
+<div class="body_display">
+
+<div class="comic_display" onclick="window.open('./pdf/comic_01.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_01.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 1</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_02.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_02.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 2</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_03.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_03.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 3</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_04.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_04.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 4</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_05.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_current.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 5</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_06.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_0601_002.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 6</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_07.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/issue7_002.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 7</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_08.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_0801_cover_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 8</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_09.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_0901_cover_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 9</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_10.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_1001_cover_001.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 10</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/comic_11.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_11.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 11</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_12.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_12.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 12</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_13.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_13_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 13</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_14.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_14_cover.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 14</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_15.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/COH015_cover_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 15</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_16.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic16.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 16</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_17.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic17.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 17</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_18.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic18_000.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 18</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_19.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_19_small.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 19</div>
+</div>
+
+
+<div class="comic_display" onclick="window.open('./pdf/comic_20.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/comic_20_sm.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 20</div>
+</div>
+</div>
+<br/>
+<div class="sub_header">Blue King Comics</div>
+<br/>
+<div class="body_display">
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue1.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_1.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 1</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue2.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_2.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 2</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue3.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_3.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 3</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue4.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_4.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 4</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue5.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_5.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 5</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue6.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_6.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 6</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue7.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_7.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 7</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue8.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_8.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 8</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue9.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/Bk_9.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 9</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue10.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/Bk_10.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 10</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue11.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/Bk_11.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 11</div>
+</div>
+
+<div class="comic_display" onclick="window.open('./pdf/bk_issue12.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/BK_12.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 12</div>
+</div>
+</div>
+
+<br/>
+<div class="sub_header">Dark Horse Comics</div>
+<br/>
+<div class="body_display">
+
+<div class="comic_display" onclick="window.open('./pdf/coh_promo_issue.pdf','_blank')">
+  <div class="sub_menu"><img src="./thumbnail/coh_promo_comic_cover_thumb.jpg" class="display_box_comic"></div>
+  <div class="sub_menu_text_comic">Issue 1</div>
+</div>
+</div>
+
+</body>
+</html>

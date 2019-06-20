@@ -1,0 +1,1013 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="manifest" href="../images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<script  src="enhance.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<title>City of Heroes - Enhancements</title>
+<link rel="stylesheet" type="text/css" href="../codex.css">
+<script language="javascript" type="text/javascript">
+     var images = new Array()
+     var images2 = new Array()
+     var images3 = new Array()
+
+     images[0] = "../images/cov_large.png";
+     images[1] = "../images/coh_gr_large.png";
+     images[2] = "../images/coh_large.png";
+     images2[0] = "../images/city_back_blue.png";
+     images2[1] = "../images/city_back_red.png";
+     images2[2] = "../images/city_back_gr.png";
+     images3[0] = "linear-gradient(#000428, #004e92)";
+     images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
+     images3[2] = "linear-gradient(#333333, #c9ad1c)";
+
+     setInterval("changeImage()", 8000);
+     setInterval("changeImage2()", 8000);
+     setInterval("changeImage3()", 8000);
+
+     var x=0;
+
+     	function changeImage()
+     {
+		$("#switch").fadeOut(1);
+                document.getElementById("switch").src=images[x]
+		$("#switch").fadeIn(1600);
+                x++;
+		if (images.length == x) 
+                {
+                    x = 0;
+                }
+     }
+	function changeImage2()
+     {   
+		document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+		$("#switch2").fadeIn(1600);
+              
+              }
+	function changeImage3()
+     {  
+		$('.enhance_display').css("background", images3[x]);
+	     }
+</script>
+<script >
+$(document).ready(function() {
+        // Tooltip only Text
+        $('.enhance_display').hover(function(){
+                // Hover over code
+                var title = $(this).attr('title');
+                $(this).data('tipText', title).removeAttr('title');
+                $('<p class="tooltip"></p>')
+                .text(title)
+                .appendTo('body')
+                .fadeIn(1000);
+        }, function() {
+                // Hover out code
+                $(this).attr('title', $(this).data('tipText'));
+                $('.tooltip').remove();
+        }).mousemove(function(e) {
+                var mousex = e.pageX + 20; //Get X coordinates
+                var mousey = e.pageY + 10; //Get Y coordinates
+                $('.tooltip')
+                .css({ top: mousey, left: mousex })
+        });
+});
+</script>
+</head>
+
+<body id="switch2" class="enhance_body">
+<div class="main_title" onclick="window.open('../','_self')" ><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
+<div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
+<br/>
+<br/>
+<hr/>
+<div class="page_header">Enhancements</div>
+<hr/>
+<br/>
+<div class="sub_header_enhance">Types</div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="8.35% Increase" onclick="toggleaccuracy()"><img src="./images/training/TO-Training-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Accuracy</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="5% Increase" onclick="toggleaccuracy_debuff()"><img src="./images/training/TO-Training-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Accuracy / ToHit<br/>DeBuff</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="8.35% Increase" onclick="toggleconfusion()"><img src="./images/training/TO-Training-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Confusion</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="8.35% Increase" onclick="toggledamage()"><img src="./images/training/TO-Training-Damage.png" class="small_icons">
+    <div class="enhance_text">Damage</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="5% Increase" onclick="toggledefence_buff()"><img src="./images/training/TO-Training-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Defense<br/>Buff</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="8.35% Increase" onclick="toggledefence_debuff()"><img src="./images/training/TO-Training-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Defense<br/>DeBuff</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="8.35% Increase" onclick="toggledisorient()"><img src="./images/training/TO-Training-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Disorient / Stun</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="8.35% Increase"onclick="toggleendurance_modification()"><img src="./images/training/TO-Training-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Endurance<br/>Modification</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="8.35% Increase" onclick="toggleendurance_reduction()"><img src="./images/training/TO-Training-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Endurance<br/>Reduction</div>
+  </div>
+  <div class="enhance_display" id="fear" title="8.35% Increase" onclick="togglefear()"><img src="./images/training/TO-Training-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Fear<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="fly" title="8.35% Increase" onclick="togglefly()"><img src="./images/training/TO-Training-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Flying</div>
+  </div>
+  <div class="enhance_display" id="heal" title="8.35% Increase" onclick="toggleheal()"><img src="./images/training/TO-Training-Heal.png" class="small_icons">
+    <div class="enhance_text">Healing / Absorb</div>
+  </div>
+  <div class="enhance_display" id="hold" title="8.35% Increase" onclick="togglehold()"><img src="./images/training/TO-Training-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Hold<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="8.35% Increase" onclick="toggleimmobilization()"><img src="./images/training/TO-Training-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Immobilization<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="8.35% Increase" onclick="toggleintangibility()"><img src="./images/training/TO-Training-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Intangibility<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="10% Increase" onclick="toggleinterrupt()"><img src="./images/training/TO-Training-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Interrupt<br/>Reduction</div>
+  </div>
+  <div class="enhance_display" id="jump" title="8.35% Increase" onclick="togglejump()"><img src="./images/training/TO-Training-Jump.png" class="small_icons">
+    <div class="enhance_text">Jumping</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="15% Increase" onclick="toggleknockback()"><img src="./images/training/TO-Training-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Knockback<br/>Distance</div>
+  </div>
+  <div class="enhance_display" id="range" title="5% Increase" onclick="togglerange()"><img src="./images/training/TO-Training-Range.png" class="small_icons">
+    <div class="enhance_text">Range<br/>Increase</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="8.35% Increase" onclick="togglerecharge()"><img src="./images/training/TO-Training-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Recharge<br/>Reduction</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="5% Increase" onclick="toggleresist_damage()"><img src="./images/training/TO-Training-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Resist<br/>Damage</div>
+  </div>
+  <div class="enhance_display" id="run" title="8.35% Increase" onclick="togglerun()"><img src="./images/training/TO-Training-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Run Speed<br/>Increase</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="8.35% Increase" onclick="togglesleep()"><img src="./images/training/TO-Training-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Sleep<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="slow" title="8.35% Increase" onclick="toggleslow()"><img src="./images/training/TO-Training-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Slow</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="8.35% Increase" onclick="toggletaunt()"><img src="./images/training/TO-Training-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Taunt<br/>Duration</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="5% Increase" onclick="toggletohit_buff()"><img src="./images/training/TO-Training-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">ToHit<br/>Buff</div>
+  </div>
+</div>
+<br/>
+<div id="enhance_container">
+<br/>
+<div class="sub_header_enhance">Magic/Mutation<br/><div class="sub_sub_header">Dual Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Visor </div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="10% Increase" ><img src="./images/dual_origin/DO-Magic-Mutation-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Necklace</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Mask</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Damage.png" class="small_icons">
+    <div class="enhance_text">Gauntlet</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="10% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Circlet</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Chain</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Bracer</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Shoulderpiece</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Torque</div>
+  </div>
+  <div class="enhance_display" id="fear" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Lenses</div>
+  </div>
+  <div class="enhance_display" id="fly" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Boots</div>
+  </div>
+  <div class="enhance_display" id="heal" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Heal.png" class="small_icons">
+    <div class="enhance_text">Headband</div>
+    </div>
+  <div class="enhance_display" id="hold" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Glove</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Cuirass</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Periapt</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="20% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Ring</div>
+  </div>
+  <div class="enhance_display" id="jump" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Jump.png" class="small_icons">
+    <div class="enhance_text">Belt</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="30% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Vambrace</div>
+  </div>
+  <div class="enhance_display" id="range" title="10% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Range.png" class="small_icons">
+    <div class="enhance_text">Helmet</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Amulet</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="10% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Cord</div>
+  </div>
+  <div class="enhance_display" id="run" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Greaves</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Helm</div>
+  </div>
+  <div class="enhance_display" id="slow" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Breastplate</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="16.66% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Glasses</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="10% Increase"><img src="./images/dual_origin/DO-Magic-Mutation-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Goggles</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Natural / Magic<br/><div class="sub_sub_header">Dual Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Ring</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="10% Increase" ><img src="./images/dual_origin/DO-Natural-Magic-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Coin</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Band</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Damage.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Earring</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Brooch</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Gloves</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Symbol</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Work</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Shard</div>
+  </div>
+  <div class="enhance_display" id="fear" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Wand</div>
+  </div>
+  <div class="enhance_display" id="fly" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Gem</div>
+  </div>
+  <div class="enhance_display" id="heal" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Heal.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Candle</div>
+  </div>
+  <div class="enhance_display" id="hold" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Net</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Lens</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Gate</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="20% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Sheath</div>
+  </div>
+  <div class="enhance_display" id="jump" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Jump.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Phylactery</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="30% Increase"><img src="./images/dual_origin/DO-Natural-Magic-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Bottle</div>
+  </div>
+  <div class="enhance_display" id="range" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Range.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Stone</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Incense</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Nectanebo's<br/>Gourd</div>
+  </div>
+  <div class="enhance_display" id="run" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Li Tieh<br/>Kuai's Goblet</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Jewel</div>
+  </div>
+  <div class="enhance_display" id="slow" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Crowley's<br/>Bracelet</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Magic-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Ankh</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Magic-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Nectanebo's<br/>Book</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Natural / Technology<br/><div class="sub_sub_header">Dual Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Illumination<br/>Grenade</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="10% Increase" ><img src="./images/dual_origin/DO-Natural-Technology-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Blind Grenade </div>
+  </div>
+  <div class="enhance_display" id="confusion" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Cacophony<br/>Projector</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Damage.png" class="small_icons">
+    <div class="enhance_text">High Explosive<br/>Grenade<br/></div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Defender<br/>Projector</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Adhesive<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Flashbang<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Endurance<br/>Modification Device</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Oxygen<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="fear" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Dread<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="fly" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Ascendance<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="heal" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Heal.png" class="small_icons">
+    <div class="enhance_text">Medical<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="hold" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Net<br/>Projector</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Entangle<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Phase<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="20% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Chronoenhancer<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="jump" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Jump.png" class="small_icons">
+    <div class="enhance_text">Hydraulic<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="30% Increase"><img src="./images/dual_origin/DO-Natural-Technology-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Repulsion<br/>Projector</div>
+  </div>
+  <div class="enhance_display" id="range" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Range.png" class="small_icons">
+    <div class="enhance_text">Reach<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Haste<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Aegis<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="run" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Acceleration<br/>Device</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Neuralyzer<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="slow" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Nullifier<br/>Device</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="16.66% Increase"><img src="./images/dual_origin/DO-Natural-Technology-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Agony<br/>Grenade</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="10% Increase"><img src="./images/dual_origin/DO-Natural-Technology-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Targeting<br/>Projector</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Science / Technology<br/><div class="sub_sub_header">Dual Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Bioluminescent<br/>Filter</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="10% Increase" ><img src="./images/dual_origin/DO-Technology-Science-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Cardio<br/>Destabilizer</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Paraxial<br/>Modifier</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Damage.png" class="small_icons">
+    <div class="enhance_text">Quantum<br/>Balancer</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="10% Increase"><img src="./images/dual_origin/DO-Technology-Science-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Interdiffusion<br/>Modifier</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Epidermal<br/>Degenerator</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Dynamic<br/>Inhibitor</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Adrenal<br/>Modifier</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Metastable<br/>Capacitor</div>
+  </div>
+  <div class="enhance_display" id="fear" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Isotatic<br/>Inversion</div>
+  </div>
+  <div class="enhance_display" id="fly" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Micro Adaptive<br/>Flow Control</div>
+  </div>
+  <div class="enhance_display" id="heal" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Heal.png" class="small_icons">
+    <div class="enhance_text">Bioregenerator</div>
+  </div>
+  <div class="enhance_display" id="hold" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Bonding<br/>Compound</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Kinetic<br/>Inhibitor</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Oscillator<br/>Overthruster</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="20% Increase"><img src="./images/dual_origin/DO-Technology-Science-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Chronotranstabilizer</div>
+  </div>
+  <div class="enhance_display" id="jump" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Jump.png" class="small_icons">
+    <div class="enhance_text">Centripetal<br/>Augmenter</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="30% Increase"><img src="./images/dual_origin/DO-Technology-Science-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Kinetic<br/>Accelerator</div>
+  </div>
+  <div class="enhance_display" id="range" title="10% Increase"><img src="./images/dual_origin/DO-Technology-Science-Range.png" class="small_icons">
+    <div class="enhance_text">Magnetic<br/>Aspirator</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Mercurial<br/>Theorem</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="10% Increase"><img src="./images/dual_origin/DO-Technology-Science-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Composite<br/>Epidermal Underlay</div>
+  </div>
+  <div class="enhance_display" id="run" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Transmatrix<br/>Bipedal Amplifier</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Hyperbaric<br/>Matrix</div>
+  </div>
+  <div class="enhance_display" id="slow" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Muscular<br/>Atrophier</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="16.66% Increase"><img src="./images/dual_origin/DO-Technology-Science-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Photonic<br/>Capacitor</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="10% Increase"><img src="./images/dual_origin/DO-Technology-Science-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Cardiac<br/>Compensator</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Mutation / Science<br/><div class="sub_sub_header">Dual Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Reflex Boost </div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="10% Increase" ><img src="./images/dual_origin/DO-Mutation-Science-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Accuracy Drain </div>
+  </div>
+  <div class="enhance_display" id="confusion" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Confuse Boost </div>
+  </div>
+  <div  class="enhance_display"id="damage" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Damage.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Damage Boost </div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="10% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Shield Boost </div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Shield Drain </div>
+  </div>
+  <div class="enhance_display" id="disorient" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Stun Boost </div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Endurance Modification </div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Adrenal Boost </div>
+  </div>
+  <div class="enhance_display" id="fear" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Nightmare Boost </div>
+  </div>
+  <div class="enhance_display" id="fly" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Flight Boost </div>
+  </div>
+  <div class="enhance_display" id="heal" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Heal.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Healing Boost </div>
+  </div>
+  <div class="enhance_display" id="hold" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Hold Boost </div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Entangle Boost </div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Phase Boost </div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="20% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding Time<br/>Manipulation Boost </div>
+  </div>
+  <div class="enhance_display" id="jump" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Jump.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Jump Boost </div>
+  </div>
+  <div class="enhance_display" id="knockback" title="30% Increase"><img src="./images/dual_origin/DO-Mutation-Science-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Knockback Boost </div>
+  </div>
+  <div class="enhance_display" id="range" title="10% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Range.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Range Boost </div>
+  </div>
+  <div class="enhance_display" id="recharge" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Charge Rate Boost </div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="10% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Molecular Bonding<br/>Resistance Boost </div>
+  </div>
+  <div class="enhance_display" id="run" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Run Boost </div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>NeuroParalysis Boost </div>
+  </div>
+  <div class="enhance_display" id="slow" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Molecular Bonding<br/>Deadliness Drain </div>
+  </div>
+  <div class="enhance_display" id="taunt" title="16.66% Increase"><img src="./images/dual_origin/DO-Mutation-Science-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">DNA Resequencing<br/>Taunt Boost </div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="10% Increase"><img src="./images/dual_origin/DO-Mutation-Science-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Genome Alteration<br/>Accuracy Boost </div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Mutation<br/><div class="sub_sub_header">Single Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Awakening: Improved<br/>Accuracy</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="20% Increase" ><img src="./images/single_origin/SO-Mutation-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Accuracy Degradation</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Increased Confusion</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Damage.png" class="small_icons">
+    <div class="enhance_text">Catalyst:<br/>Improved Damage</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="20% Increase"><img src="./images/single_origin/SO-Mutation-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Catalyst:<br/>Defense Extension</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Defense Degradation</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Increased Stun</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Endurance Modification</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Reduced Endurance</div>
+  </div>
+  <div class="enhance_display" id="fear" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Increased Fear</div>
+  </div>
+  <div class="enhance_display" id="fly" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Catalyst:<br/>Amplified Flying</div>
+  </div>
+  <div class="enhance_display" id="heal" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Heal.png" class="small_icons">
+    <div class="enhance_text">Catalyst:<br/>Amplified Healing</div>
+  </div>
+  <div class="enhance_display" id="hold" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Catalyst:<br/>Stasis Amplification</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Catalyst: Increased<br/>Immobilization</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Phase Extension</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="40% Increase"><img src="./images/single_origin/SO-Mutation-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Catalyst: Chronometric<br/>Manipulation</div>
+  </div>
+  <div class="enhance_display" id="jump" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Jump.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Improved Jump</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="60% Increase"><img src="./images/single_origin/SO-Mutation-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Extended Knockback</div>
+  </div>
+  <div class="enhance_display" id="range" title="20% Increase"><img src="./images/single_origin/SO-Mutation-Range.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Extended Range</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Reduced Recharge</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="20% Increase"><img src="./images/single_origin/SO-Mutation-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Catalyst:<br/>Improved Resistance</div>
+  </div>
+  <div class="enhance_display" id="run" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Awakening:<br/>Amplified Running</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Neural Paralysis</div>
+  </div>
+  <div class="enhance_display" id="slow" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Movement Degradation</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="33.33% Increase"><img src="./images/single_origin/SO-Mutation-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Evolution:<br/>Annoyance Factor</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="20% Increase"><img src="./images/single_origin/SO-Mutation-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Catalyst: Accuracy<br/>Extension</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Magic<br/><div class="sub_sub_header">Single Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Insight of Grey</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="20% Increase" ><img src="./images/single_origin/SO-Magic-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Neglect of Joule</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Perplexity of Hermes</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Damage.png" class="small_icons">
+    <div class="enhance_text">Fury of Joule</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="20% Increase"><img src="./images/single_origin/SO-Magic-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Shield of Joule</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Devastation of Joule</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Bewildering of Hermes</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Resolution of Grey</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Power of Grey</div>
+  </div>
+  <div class="enhance_display" id="fear" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Horror of Hermes</div>
+  </div>
+  <div class="enhance_display" id="fly" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Swiftness of Joule</div>
+  </div>
+  <div class="enhance_display" id="heal" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Heal.png" class="small_icons">
+    <div class="enhance_text">Grace of Joule</div>
+  </div>
+  <div class="enhance_display" id="hold" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Paralyzation of Joule</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Bands of Hermes</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Phasing of Grey</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="40% Increase"><img src="./images/single_origin/SO-Magic-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Skip of Joule</div>
+  </div>
+  <div class="enhance_display" id="jump" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Jump.png" class="small_icons">
+    <div class="enhance_text">Hurdle of Grey</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="60% Increase"><img src="./images/single_origin/SO-Magic-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Smite of Hermes</div>
+  </div>
+  <div class="enhance_display" id="range" title="20% Increase"><img src="./images/single_origin/SO-Magic-Range.png" class="small_icons">
+    <div class="enhance_text">Extension of Joule</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Renewing of Hermes</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="20% Increase"><img src="./images/single_origin/SO-Magic-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Shield of Hermes</div>
+  </div>
+  <div class="enhance_display" id="run" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Stride of Grey</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Rest of Hermes</div>
+  </div>
+  <div class="enhance_display" id="slow" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Pacification of Hermes</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="33.33% Increase"><img src="./images/single_origin/SO-Magic-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Voice of Hermes</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="20% Increase"><img src="./images/single_origin/SO-Magic-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Aim of Joule</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Natural<br/><div class="sub_sub_header">Single Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Strike</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="20% Increase" ><img src="./images/single_origin/SO-Natural-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Blind Strike</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Flurry</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Damage.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Rage</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="20% Increase"><img src="./images/single_origin/SO-Natural-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Defense</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Stunning Hit</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Daze Strike</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Vitality</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Encouragement</div>
+  </div>
+  <div class="enhance_display" id="fear" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Intimidation</div>
+  </div>
+  <div class="enhance_display" id="fly" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Flight</div>
+  </div>
+  <div class="enhance_display" id="heal" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Heal.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Healing</div>
+  </div>
+  <div class="enhance_display" id="hold" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Paralyzer</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Immob. Technique</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Elusiveness</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="40% Increase"><img src="./images/single_origin/SO-Natural-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Abbreviation</div>
+  </div>
+  <div class="enhance_display" id="jump" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Jump.png" class="small_icons">
+    <div class="enhance_text">Dragon<br/>Leap</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="60% Increase"><img src="./images/single_origin/SO-Natural-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Bull Rush</div>
+  </div>
+  <div class="enhance_display" id="range" title="20% Increase"><img src="./images/single_origin/SO-Natural-Range.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Extension</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Speed</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="20% Increase"><img src="./images/single_origin/SO-Natural-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Dragon<br/>Scales</div>
+  </div>
+  <div class="enhance_display" id="run" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Sprint</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Nerve Strike</div>
+  </div>
+  <div class="enhance_display" id="slow" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Back Alley<br/>Crippling Blow</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="33.33% Increase"><img src="./images/single_origin/SO-Natural-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Insight</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="20% Increase"><img src="./images/single_origin/SO-Natural-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Military<br/>Targeting</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Technology<br/><div class="sub_sub_header">Single Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech Adv.<br/>Targeting Eye</div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="20% Increase" ><img src="./images/single_origin/SO-Technology-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Nanovirus</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Vocal Mimicer</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Damage.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Internal Munitions</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="20% Increase"><img src="./images/single_origin/SO-Technology-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Synapse bridge</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Nanodisintegrators</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Holey Field Generator</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Hyperkinetic Polymer</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Cyberheart</div>
+  </div>
+  <div class="enhance_display" id="fear" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Facial Reconstruction</div>
+  </div>
+  <div class="enhance_display" id="fly" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Auxiliary Boosters</div>
+  </div>
+  <div class="enhance_display" id="heal" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Heal.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Nanodoctors</div>
+  </div>
+  <div class="enhance_display" id="hold" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Stasis Regenerator</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Neuralparalyzer</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Destabilizer</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="40% Increase"><img src="./images/single_origin/SO-Technology-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Accelerator</div>
+  </div>
+  <div class="enhance_display" id="jump" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Jump.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Cyberlegs</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="60% Increase"><img src="./images/single_origin/SO-Technology-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Repulsion Field</div>
+  </div>
+  <div class="enhance_display" id="range" title="20% Increase"><img src="./images/single_origin/SO-Technology-Range.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Telescoping Eye</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Adrenal Gland Booster</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="20% Increase"><img src="./images/single_origin/SO-Technology-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Portacio Ind<br/>Subdermal Plating</div>
+  </div>
+  <div class="enhance_display" id="run" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Cyberhips</div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">WetWare Eng<br/>Neuralyzer</div>
+  </div>
+  <div class="enhance_display" id="slow" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Nanodegenerators</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="33.33% Increase"><img src="./images/single_origin/SO-Technology-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Benedict Tech<br/>Agonizer</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="20% Increase"><img src="./images/single_origin/SO-Technology-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Portacio Ind<br/>Nanooptics</div>
+  </div>
+</div>
+<br/>
+<div class="sub_header_enhance">Science<br/><div class="sub_sub_header">Single Origin</div></div>
+<br/>
+<div class="enhance_body_display">
+  <div class="enhance_display" id="accuracy" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Accuracy.png" class="small_icons">
+    <div class="enhance_text">Gamma Particle<br/>Irradiation </div>
+  </div>
+  <div  class="enhance_display"id="accuracy_deBuff" title="20% Increase" ><img src="./images/single_origin/SO-Science-ToHit-DeBuffs.png" class="small_icons">
+    <div class="enhance_text">Tellurium<br/>Bombardment</div>
+  </div>
+  <div class="enhance_display" id="confusion" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Confusion-Duration.png" class="small_icons">
+    <div class="enhance_text">Theta Wave<br/>Bombardment</div>
+  </div>
+  <div  class="enhance_display"id="damage" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Damage.png" class="small_icons">
+    <div class="enhance_text">Xenon Exposure</div>
+  </div>
+  <div class="enhance_display" id="defence_buff" title="20% Increase"><img src="./images/single_origin/SO-Science-Defense-Buff.png" class="small_icons">
+    <div class="enhance_text">Barium Irradiation</div>
+  </div>
+  <div class="enhance_display" id="defence_debuff" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Defense-DeBuff.png" class="small_icons">
+    <div class="enhance_text">Radon Irradiation</div>
+  </div>
+  <div class="enhance_display" id="disorient" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Disorient-Duration.png" class="small_icons">
+    <div class="enhance_text">Alpha Wave<br/>Bombardment</div>
+  </div>
+  <div class="enhance_display" id="endurance_modification" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Endurance-Modification.png" class="small_icons">
+    <div class="enhance_text">Impervium Exposure</div>
+  </div>
+  <div class="enhance_display" id="endurance_reduction" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Endurance-Cost.png" class="small_icons">
+    <div class="enhance_text">Boron Exposure</div>
+  </div>
+  <div class="enhance_display" id="fear" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Fear-Duration.png" class="small_icons">
+    <div class="enhance_text">Cosmic Ray<br/>Exposure</div>
+  </div>
+  <div class="enhance_display" id="fly" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Flight-Speed.png" class="small_icons">
+    <div class="enhance_text">Ionic<br/>Bombardment</div>
+  </div>
+  <div class="enhance_display" id="heal" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Heal.png" class="small_icons">
+    <div class="enhance_text">Polonium Irradiation</div>
+  </div>
+  <div class="enhance_display" id="hold" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Hold-Duration.png" class="small_icons">
+    <div class="enhance_text">Thallium Exposure</div>
+  </div>
+  <div class="enhance_display" id="immobilization" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Immobilization-Duration.png" class="small_icons">
+    <div class="enhance_text">Auroral Particle<br/>Bombardment</div>
+  </div>
+  <div class="enhance_display" id="intangibility" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Intangibility-Duration.png" class="small_icons">
+    <div class="enhance_text">Hydrazine Exposure</div>
+  </div>
+  <div class="enhance_display" id="interrupt" title="40% Increase"><img src="./images/single_origin/SO-Science-Interrupt-Time.png" class="small_icons">
+    <div class="enhance_text">Thermodynamic<br/>Bombardment</div>
+  </div>
+  <div class="enhance_display" id="jump" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Jump.png" class="small_icons">
+    <div class="enhance_text">Butadiene Exposure</div>
+  </div>
+  <div class="enhance_display" id="knockback" title="60% Increase"><img src="./images/single_origin/SO-Science-KnockBack-Distance.png" class="small_icons">
+    <div class="enhance_text">Fluorine Research</div>
+  </div>
+  <div class="enhance_display" id="range" title="20% Increase"><img src="./images/single_origin/SO-Science-Range.png" class="small_icons">
+    <div class="enhance_text">Neodymium Irradiation</div>
+  </div>
+  <div class="enhance_display" id="recharge" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Attack-Rate.png" class="small_icons">
+    <div class="enhance_text">Alpha Particle<br/>Exposure</div>
+  </div>
+  <div class="enhance_display" id="resist_damage" title="20% Increase"><img src="./images/single_origin/SO-Science-Damage-Resistance.png" class="small_icons">
+    <div class="enhance_text" >Argon Experiment</div>
+  </div>
+  <div class="enhance_display" id="run" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Running-Speed.png" class="small_icons">
+    <div class="enhance_text">Electromagnetic Wave<br/>Bombardment </div>
+  </div>
+  <div  class="enhance_display" id="sleep" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Sleep-Duration.png" class="small_icons">
+    <div class="enhance_text">Cesium Exposure</div>
+  </div>
+  <div class="enhance_display" id="slow" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Slow-powers.png" class="small_icons">
+    <div class="enhance_text">Hydrogen Exposure</div>
+  </div>
+  <div class="enhance_display" id="taunt" title="33.33% Increase"><img src="./images/single_origin/SO-Science-Taunt-Effectiveness.png" class="small_icons">
+    <div class="enhance_text">Positron Bombardment</div>
+  </div>
+  <div class="enhance_display" id="tohit_buff" title="20% Increase"><img src="./images/single_origin/SO-Science-ToHit-Buffs.png" class="small_icons">
+    <div class="enhance_text">Nitrogen Exposure</div>
+  </div>
+</div>
+</div>
+</div>
+<br/>
+</body>
+</html>

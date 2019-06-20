@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<title>City of Heroes -  Charcter Tools</title>
+<link rel="stylesheet" type="text/css" href="../codex.css">
+<script language="javascript" type="text/javascript">
+     var images = new Array()
+     var images2 = new Array()
+     var images3 = new Array()
+
+     images[0] = "../images/cov_large.png";
+     images[1] = "../images/coh_gr_large.png";
+     images[2] = "../images/coh_large.png";
+     images2[0] = "../images/city_back_blue.png";
+     images2[1] = "../images/city_back_red.png";
+     images2[2] = "../images/city_back_gr.png";
+     images3[0] = "linear-gradient(#000428, #004e92)";
+     images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
+     images3[2] = "linear-gradient(#333333, #c9ad1c)";
+
+     setInterval("changeImage()", 8000);
+     setInterval("changeImage2()", 8000);
+     setInterval("changeImage3()", 8000);
+
+     var x=0;
+
+     	function changeImage()
+     {
+		$("#switch").fadeOut(1);
+                document.getElementById("switch").src=images[x]
+		$("#switch").fadeIn(1600);
+                x++;
+		if (images.length == x) 
+                {
+                    x = 0;
+                }
+     }
+	function changeImage2()
+     {   
+		document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+		$("#switch2").fadeIn(1600);
+              
+              }
+	function changeImage3()
+     {  
+		$('.tools_display').css("background", images3[x]);
+	     }
+</script>
+ 
+</head>
+
+<body id="switch2">
+<div class="main_title" onclick="window.open('../','_self')" ><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
+<div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
+<br/>
+<br/>
+<hr/>
+<div class="page_header">Character Tools</div>
+<hr/>
+<br/>
+<div class="body_display">
+
+<div class="tools_display" onclick="window.open('./hero_designer.zip','_blank')">
+  <div class="sub_menu"><img src="../images/statesman.png" class="display_box_tool"></div>
+  <div class="sub_menu_text_tools">Hero Designer<br/><div class="sub_text">(Download 9.0MB)</div></div>
+</div>
+
+<div class="tools_display" onclick="window.open('../enhancements/','_self')">
+  <div class="sub_menu"><img src="../enhancements/images/training/TO-Training-Heal.png" class="display_box_tool"></div>
+  <div class="sub_menu_text_tools">Enhancements</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
