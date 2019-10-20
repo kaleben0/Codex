@@ -1,0 +1,265 @@
+/* -------------------------------------------------------------------------- */
+/* -----| GALLERY LIST |----------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@font-face {
+  font-family: redcircl;
+  src: url(../fonts/redcircl.ttf);
+}
+@font-face {
+  font-family: hero;
+  src: url(../fonts/Hero-Regular.ttf);
+}
+
+
+body {
+	background-color:#000;
+	color:#fff;
+	font-family: redcircl;	
+	margin-left:auto;
+	background-image: url(./images/coh_city.png);
+	background-attachment: fixed;
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+.pictitle {
+	text-decoration:none;
+	color:#000;
+	font-size:18px;
+	text-align:center;
+	font-family: hero;
+	height:40px;
+	text-shadow: 2px 2px #000;	
+}
+#galleryWrapper {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.tooltip {
+        display:none;
+        position:absolute;
+        border:1px solid #195AA8;
+        background-color:#000;
+        padding:10px;
+        color:#fff;
+}
+
+.cboxElement {
+}
+
+#galleryList {
+    margin: 0;
+    padding: 10px 4px;
+}
+
+#galleryList li {
+
+    	display: inline-block;
+    	list-style: none;
+    	margin: 5px 6px;
+    	padding: 0;
+	border-radius: 50px;
+  	background: linear-gradient(#000428, #004e92);
+
+
+}
+#galleryList li {
+box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0) inset,
+    0 0 5px rgba(0, 0, 0, 0.5) inset,
+    0 20px 0 rgba(255, 255, 255, 0.07) inset,
+    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+
+#galleryList li:hover{
+ 	background: linear-gradient(#01084a, #025eaf);
+	transform: translate(2px, -2px);
+}
+
+
+#galleryList li a {
+    display: block;
+    padding: 4px;
+    width: 210px;	
+    text-decoration: none;
+    color:#fff;
+}
+
+#galleryList li a:hover {
+    border-color: #999;
+}
+
+#galleryList li a img {
+    border: none;
+    margin-left: 39px;
+    border: 2px solid black;
+    border-radius:12px;
+	margin-top:20px;
+}
+#galleryList li a img {
+	margin-left:unset;
+}
+#galleryList li a {
+	text-align: center;
+}
+#galleryList {
+text-align: center;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| GALLERY FOOTER |--------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#galleryFooter {
+    border-top: 1px solid #CCC;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#credit {
+    float: right;
+    font-size: 0.9em;
+    margin: 4px 0;
+}
+
+#galleryFooter #credit a {
+    color: #369;
+}
+
+
+/* ---------------------------------------- */
+/* ----|  PAGINATION  |-------------------- */
+/* ---------------------------------------- */
+
+#galleryPagination {
+    color: #369;
+    float: left;
+    font-size: .9em;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+#galleryPagination li {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    list-style: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#galleryPagination li:hover {
+    background-color: #EFEFEF;
+    border: 1px solid #CCC;
+}
+
+#galleryPagination li.title {
+    background: transparent url(../../page_white_stack.png) no-repeat left center;
+    border: 1px solid transparent;
+    font-weight: normal;
+    padding: 3px 6px 3px 22px;
+}
+
+#galleryPagination li a, #galleryPagination li a:visited {
+    color: #369;
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+#galleryPagination li.current {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #333;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+#galleryPagination li.inactive {
+    background-color: transparent;
+    color: #ACACAC;
+    border: 1px solid transparent;
+    display: block;
+    padding: 3px 6px;
+}
+
+
+/* ---------------------------------------- */
+/* ----|  MISCELLANEOUS  |----------------- */
+/* ---------------------------------------- */
+
+/* --- CLEAR FIX --- */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1; /* IE6 */
+}
+
+*:first-child+html .clearfix {
+    zoom: 1; /* IE7 */
+}
+.home_button2 {
+	width:40px;
+	height:31px;
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid #fff;
+	background:linear-gradient(to bottom, #000428, #004e92);	
+	top:19px;
+	left:13px;
+	position:absolute;
+	font-size:1.7em;
+	border-radius:10px;
+	margin-top:1px;
+	margin-left:5px;
+	display:none;
+	padding-top:4px;
+
+}
+.home_button2:hover {
+		transform: translate(2px, -2px);
+}
+fa {
+	margin-top:10px;
+	margin-left:5px;
+	text-align:center;
+	verticle-align:middle;
+}
+
+
+@media screen and (max-width: 500px) {
+#galleryList li a img {
+	margin-left:unset;
+}
+#galleryList li a {
+	text-align: center;
+}
+.home_button2 {
+	display:block;
+}
+
+#galleryList {
+text-align: center;
+}
+}
+
+/**
+ * UberGallery.css created and implimented by,
+ * Chris Kankiewicz -- http://www.ChrisKankiewicz.com
+ */
