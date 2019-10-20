@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="manifest" href="../images/site.webmanifest">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<title>City of Heroes -  Story Bible</title>
+<link rel="stylesheet" type="text/css" href="../codex.css">
+<script language="javascript" type="text/javascript">
+     var images = new Array()
+     var images2 = new Array()
+     var images3 = new Array()
+
+     images[0] = "../images/cov_large.png";
+     images[1] = "../images/coh_gr_large.png";
+     images[2] = "../images/coh_large.png";
+     images2[0] = "../images/city_back_blue.png";
+     images2[1] = "../images/city_back_red.png";
+     images2[2] = "../images/city_back_gr.png";
+     images3[0] = "linear-gradient(#000428, #004e92)";
+     images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
+     images3[2] = "linear-gradient(#333333, #c9ad1c)";
+
+//     setInterval("changeImage()", 8000);
+//     setInterval("changeImage2()", 8000);
+//    setInterval("changeImage3()", 8000);
+
+     var x=0;
+
+     	function changeImage()
+     {
+
+                document.getElementById("switch").src=images[x]
+                x++;
+		if (images.length == x) 
+                {
+                    x = 0;
+                }
+     }
+	function changeImage2()
+     {   
+		document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+		$("#switch2").fadeIn(1600);
+              
+              }
+	function changeImage3()
+     {  
+		$('.sb_display').css("background", images3[x]);
+	     }
+</script>
+<script>
+function force_change() {
+	changeImage();
+	changeImage2();
+	changeImage3();
+}
+</script>
+
+</head>
+
+<body id="switch2">
+<div class="main_title" onclick="force_change();" ><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
+<div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
+<br/>
+<br/>
+<hr/>
+<div class="page_header" onclick="location.reload();">Story Bible</div>
+<hr/>
+<br/>
+
+<div class="sub_header">Heroes</div>
+<br/>
+<div class="body_display">
+
+<div class="sb_display" onclick="window.open('./Heroes/signature_characters.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/statesman.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Signature Characters</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./Heroes/freedom_corps.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/statesman.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Freedom<br/>Corps</div>
+</div>
+</div>
+</div>
+
+
+<br/>
+<div class="sub_header">Villains</div>
+<br/>
+<div class="body_display">
+
+<div class="sb_display" onclick="window.open('./Villains/Arachnos.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/arachnos.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Arachnos</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./Villains/the_council.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/arachnos.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">The Council</div>
+</div>
+</div>
+
+<br/>
+<div class="sub_header">Paragon City</div>
+<br/>
+<div class="body_display">
+
+<div class="sb_display" onclick="window.open('./paragon_city/Brickstown.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Brickstown</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/creys_folly.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Crey's Folly</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/dark_astoria.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Dark Astoria</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/Eden.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Eden<br/>(Woodvale)</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/Faultline.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Faultline</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/founders_falls.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Founder's Falls</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/peregrine_island.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Peregrine Island</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/rikti_crash_site.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Rikti Crash Site</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./paragon_city/striga_island.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/blank_city_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Striga Island</div>
+</div>
+
+
+</div>
+
+<br/>
+<div class="sub_header">Zone Info</div>
+<br/>
+<div class="body_display">
+
+<div class="sb_display" onclick="window.open('./Zone/Paragon City Sourcebook Zone Outline.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/zone.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Paragon City<br/>Sourcebook Zone<br/>Outline</div>
+</div>
+
+
+<div class="sb_display" onclick="window.open('./Zone/peregrine-rikti.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/zone.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Peregrine Island<br/><hr class="sb_hr"/>Rikti Crash Site</div>
+</div>
+
+
+
+</div>
+
+<br/>
+<div class="sub_header">Zone Lore</div>
+<br/>
+<div class="body_display">
+
+<div class="sb_display" onclick="window.open('./Lore/plaques_badges.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/coh_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Paragon City<br/>Plaques & Badges</div>
+</div>
+
+<div class="sb_display" onclick="window.open('./Lore/Orion-Majestic.pdf','_blank')">
+  <div class="sub_menu"><img src="../images/coh_badge.png" class="display_box_sb"></div>
+  <div class="sub_menu_text_sb">Orion-Majestic<br/>Theater</div>
+</div>
+
+
+</div>
+<div class="home_button" onclick="window.open('https://rednet.pw:48512/coh-codex/','_self')"><i class="fas fa-home"></i></div>
+
+
+</body>
+</html>
