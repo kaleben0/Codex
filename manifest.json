@@ -1,8 +1,8 @@
 {
   "name": "City of Heroes - Codex",
   "short_name": "COH-Codex",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "#004e92",
+  "background_color": "#004e92",
   "display": "standalone",
   "Scope": "/",
   "start_url": "index.html",
