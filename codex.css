@@ -326,7 +326,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: right;
-	width: 395px;
+	width: 350px;
 	height: 60px;
 	font-family: hero;
 	color: #FFFFFF;
@@ -353,7 +353,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: left;
-	width: 270px;
+	width: 350px;
 	height: 60px;
 	font-family: hero;
 	color: #FFFFFF;
