@@ -268,7 +268,7 @@
       $name = $row['name'];
       $img_file = $row['img_file'];
 
-      
+
 
       echo "<div class='enhance_body_display'>";
         echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
@@ -279,7 +279,7 @@
         $result->free();
            }
     ?>
-
+ </div>
         <div class="natural_magic">
           <div class="sub_header_enhance">Natural / Magic
             <div class="sub_sub_header">Dual Origin</div>
