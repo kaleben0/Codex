@@ -20,6 +20,8 @@
       <link rel="icon" sizes="384x384" href="../images/icons/icon-384x384.png">
       <link rel="icon" sizes="512x512" href="../images/icons/icon-512x512.png">
       <link rel="stylesheet" type="text/css" href="../codex.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -27,6 +29,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
           integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
           crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+
       <script src="../enhancements/enhance.js"></script>
       <script language="javascript" type="text/javascript">
       var images = new Array()
@@ -92,7 +98,7 @@
       </script>
       <script>
       function clear_list() {
-        $('#the_list').empty();
+          $('#the_list').empty();
       }
       </script>
   </head>
@@ -104,7 +110,8 @@
       <hr />
       <div class="page_header" onclick="location.reload();">Training/DO/SO<br />Enhancements</div>
       <hr />
-      <div class="sub_header_enhance">Shopping List</div><button onclick="clear_list();"><i class="fas fa-trash"></i></button>
+      <div class="sub_header_enhance">Shopping List</div><button class="btn btn-primary" onclick="clear_list();"><i
+              class="fas fa-trash"></i></button>
       <div class="list_container">
           <ul id="the_list">
           </ul>
