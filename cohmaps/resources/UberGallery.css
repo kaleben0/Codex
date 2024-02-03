@@ -13,6 +13,7 @@
     list-style: none;
     margin: 5px 6px;
     padding: 0;
+
 }
 
 #galleryList li a {
@@ -20,6 +21,7 @@
     border: 1px solid #CCC;
     display: block;
     padding: 4px;
+    font-size: 0.7em;
 }
 
 #galleryList li a:hover {
