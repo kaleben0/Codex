@@ -75,6 +75,13 @@
                 }
      }
    </script>
+       <script>
+  function force_change() {
+    changeImage();
+    changeImage2();
+    changeImage3();
+  }
+  </script>
     <?php echo $gallery->getColorboxStyles(1); ?>
     <?php echo $gallery->getColorboxScripts(); ?>
     <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
