@@ -128,9 +128,9 @@
 <div class="sub_header">Echo Zones</div>
 <br/>
         <?php $gallery = UberGallery::init()->createGallery('gallery-images/echo', 'pvp'); ?>
-<a href="../" target="_self">
-<div class="home_button"><i class="fas fa-home"></i></div>
-</a>
+        <a href="../" target="_self">
+          <div class="btn btn-primary home_button"><i class="fas fa-home"></i></div>
+      </a>
 
 </body>
 
