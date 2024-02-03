@@ -254,6 +254,8 @@
         <div class="sub_sub_header">Dual Origin</div>
       </div>
   
+     <div class="enhance_body_display">
+
   <?php
       include '../enhancements/enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
@@ -267,7 +269,7 @@
       $origin_type = $row['origin_type'];
       $name = $row['name'];
       $img_file = $row['img_file'];
-      
+
         echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
           echo "<div class='enhance_text'>$name</div>";
           echo "</div>";
