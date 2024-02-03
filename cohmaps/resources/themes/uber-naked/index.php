@@ -83,7 +83,7 @@
 <body id="switch2" style="max-width:unset;">
 <div >
 <div class="main_title" onclick="force_change();"><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
-    <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
+<div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
 <br/>
 <br/>
 <hr/>
