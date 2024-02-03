@@ -28,48 +28,59 @@
 
     <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
     <script language="javascript" type="text/javascript">
-               var images = new Array()
-               var images2 = new Array()
-               var images3 = new Array()
-
-               images[0] = "../images/cov_large.png";
-               images[1] = "../images/coh_gr_large.png";
-               images[2] = "../images/coh_large.png";
-               images2[0] = "../images/city_back_blue.png";
-               images2[1] = "../images/city_back_red.png";
-               images2[2] = "../images/city_back_gr.png";
-               images3[0] = "linear-gradient(#000428, #004e92)";
-               images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
-               images3[2] = "linear-gradient(#333333, #c9ad1c)";
-
-               //     setInterval("changeImage()", 8000);
-               //     setInterval("changeImage2()", 8000);
-               //     setInterval("changeImage3()", 8000);
-
-               var x = 0;
-
-               function changeImage() {
-               document.getElementById("switch").src = images[x]
-               x++;
-               if (images.length == x) {
-                    x = 0;
-               }
-               }
-               function changeImage2() {
-               document.getElementById("switch2").style.backgroundImage = "url(" + images2[x] + ")";
-               $("#switch2").fadeIn(1600);
-
-               }
-               function changeImage3() {
-               $('.tools_display').css("background", images3[x]);
-               }
-
-               function force_change() {
-               changeImage();
-               changeImage2();
-               changeImage3();
-               }
-     </script>
+        var images = new Array()
+        var images2 = new Array()
+        var images3 = new Array()
+   
+        images[0] = "../images/cov_large.png";
+        images[1] = "../images/coh_gr_large.png";
+        images[2] = "../images/coh_large.png";
+        images2[0] = "../images/city_back_blue.png";
+        images2[1] = "../images/city_back_red.png";
+        images2[2] = "../images/city_back_gr.png";
+        images3[0] = "linear-gradient(#000428, #004e92)";
+        images3[1] = "linear-gradient(#1f1c18, #8e0e00)";
+        images3[2] = "linear-gradient(#333333, #c9ad1c)";
+   
+   //     setInterval("changeImage()", 8000);
+   //     setInterval("changeImage2()", 8000);
+   //     setInterval("changeImage3()", 8000);
+   
+        var x = 0
+        
+   
+             function changeImage()
+        {
+                   document.getElementById("switch").src=images[x]
+                   x++;
+             if (images.length == x) 
+                   {
+                       x = 0;
+                   }
+        }
+        function changeImage2()
+        {   
+             document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+             $("#switch2").fadeIn(1600);
+                 
+                 }
+        function changeImage3()
+        {  
+		$('.menu_block').css("background", images3[x]);
+		if ( x == 1 ) 
+                {
+                    document.getElementById("paragon").src='../images/arachnos.png';
+                }
+		if ( x == 0 ) 
+                {
+                    document.getElementById("paragon").src='../images/statesman.png';
+                }
+		if ( x == 2 ) 
+                {
+                    document.getElementById("paragon").src='../images/Praetoria_Icon_Web.png';	 
+                }
+     }
+   </script>
 
 </head>
 
