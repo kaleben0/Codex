@@ -255,7 +255,7 @@
       </div>
   
   <?php
-      include '../enhancement/enhancement_db.php';
+      include '../enhancements/enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancement WHERE origin_type='Magic-Mutation' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
