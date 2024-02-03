@@ -261,7 +261,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-	max-width: 630px;
+	max-width: 550px;
 	margin-left: auto;
 	margin-right: auto;
 }
