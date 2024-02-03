@@ -353,7 +353,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: left;
-	width: 395px;
+	width: 270px;
 	height: 60px;
 	font-family: hero;
 	color: #FFFFFF;
@@ -528,7 +528,7 @@ fa {
 	}
 
 	.enhance_text {
-		font-size: 1.1em;
+		font-size: 1.0em;
 	}
 
 	.enhance_display {
