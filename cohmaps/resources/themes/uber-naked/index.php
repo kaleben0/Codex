@@ -104,6 +104,10 @@ function force_change() {
 <div class="sub_header">Co-op Zones</div>
 <br/>
         <?php $gallery = UberGallery::init()->createGallery('gallery-images/coop', 'coop'); ?>
+<br/>
+<div class="sub_header">Echo Zones</div>
+<br/>
+        <?php $gallery = UberGallery::init()->createGallery('gallery-images/echo', 'pvp'); ?>
 <div class="home_button2" onclick="window.open('../coh-codex/','_self')"><i class="fas fa-home"></i></div>
 
 </body>
