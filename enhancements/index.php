@@ -90,6 +90,11 @@
           });
       });
       </script>
+      <script>
+      function clear_list() {
+        document.getElementById("the_list") = "";
+      }
+      </script>
   </head>
 
   <body id="switch2">
@@ -99,7 +104,7 @@
       <hr />
       <div class="page_header" onclick="location.reload();">Training/DO/SO<br />Enhancements</div>
       <hr />
-      <div class="sub_header_enhance">Shopping List</div>
+      <div class="sub_header_enhance">Shopping List</div><button onclick="clear_list();"><i class="fa-solid fa-trash"></i></button>
       <div class="list_container">
           <ul id="the_list">
           </ul>
