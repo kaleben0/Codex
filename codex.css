@@ -17,25 +17,28 @@
 
 a:link {
 	text-decoration: none;
-	color:#ffffff;
+	color: #ffffff;
 
 }
+
 a:visited {
 	text-decoration: none;
-	color:#ffffff;
+	color: #ffffff;
 }
 
 a:hover {
 	text-decoration: none;
-	color:#ffffff;
+	color: #ffffff;
 }
+
 a:active {
 	text-decoration: none;
-	color:#ffffff;
+	color: #ffffff;
 }
+
 a:hover {
-	text-decoration:none;
-	color:#ffffff;
+	text-decoration: none;
+	color: #ffffff;
 }
 
 body {
@@ -405,7 +408,7 @@ body {
 	font-size: 17px;
 	font-family: hero;
 	border-radius: 10px;
-  	min-height: 30px;
+	min-height: 30px;
 }
 
 /* Tools */
