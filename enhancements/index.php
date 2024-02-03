@@ -282,6 +282,29 @@
           <div class="sub_header_enhance">Natural / Magic
             <div class="sub_sub_header">Dual Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Magic' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
         
         <div class="natural_technology">
