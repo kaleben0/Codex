@@ -10,6 +10,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="mobile-web-app-capable" content="yes">
     <title>City of Heroes - Codex</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" sizes="72x72" href="../images/icons/icon-72x72.png">
     <link rel="icon" sizes="96x96" href="../images/icons/icon-96x96.png">
     <link rel="icon" sizes="128x128" href="../images/icons/icon-128x128.png">
@@ -69,7 +70,7 @@
 	     }
 
 </script>
-<script>
+    <script>
   window.open = cordova.InAppBrowser.open;
   
   document.addEventListener("deviceready", onDeviceReady, false);
@@ -78,22 +79,14 @@
   }
   
   </script>
- <script>
+    <script>
   function force_change() {
     changeImage();
     changeImage2();
     changeImage3();
   }
   </script>
-    <script>
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    window.open = cordova.InAppBrowser.open;
-}
-</script>
-
   </head>
-
   <body id="switch2">
     <div class="main_title" onclick="force_change();"><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
     <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
