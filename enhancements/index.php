@@ -92,7 +92,7 @@
       </script>
       <script>
       function clear_list() {
-        document.getElementById("the_list").value = "";
+        $('#the_list').empty();
       }
       </script>
   </head>
