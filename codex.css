@@ -16,8 +16,12 @@
 }
 
 *::after {
-	box-sizing:unset !important;
-  }
+	box-sizing: none !important;
+}
+
+*::before {
+	box-sizing: none !important;
+}
 
 a:link {
 	text-decoration: none;
