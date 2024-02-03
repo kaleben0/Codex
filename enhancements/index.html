@@ -46,35 +46,35 @@
    //     setInterval("changeImage3()", 8000);
    
         var x = 0
-     
+        
    
-          function changeImage()
+             function changeImage()
         {
                    document.getElementById("switch").src=images[x]
                    x++;
-       if (images.length == x) 
+             if (images.length == x) 
                    {
                        x = 0;
                    }
         }
-     function changeImage2()
+        function changeImage2()
         {   
-       document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
-       $("#switch2").fadeIn(1600);
+             document.getElementById("switch2").style.backgroundImage = "url("+images2[x]+")";
+             $("#switch2").fadeIn(1600);
                  
                  }
-     function changeImage3()
+        function changeImage3()
         {  
-       $('.menu_block').css("background", images3[x]);
-       if ( x == 1 ) 
+             $('.menu_block').css("background", images3[x]);
+             if ( x == 1 ) 
                    {
                        document.getElementById("paragon").src='images/arachnos.png';
                    }
-       if ( x == 0 ) 
+             if ( x == 0 ) 
                    {
                        document.getElementById("paragon").src='images/statesman.png';
                    }
-       if ( x == 2 ) 
+             if ( x == 2 ) 
                    {
                        document.getElementById("paragon").src='images/Praetoria_Icon_Web.png';	 
                    }
@@ -82,11 +82,12 @@
    </script>
     <script>
    function force_change() {
-     changeImage();
-     changeImage2();
-     changeImage3();
+        changeImage();
+        changeImage2();
+        changeImage3();
    }
    </script>
+
     <script>
     $(document).ready(function() {
     $(".enhance_display").click(function () {
