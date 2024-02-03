@@ -109,7 +109,7 @@
       <hr />
       <div class="page_header" onclick="location.reload();">Training/DO/SO<br />Enhancements</div>
       <hr />
-      <div class="sub_header_enhance">Shopping List</div><button class="btn btn-primary" onclick="clear_list();"><i
+      <div class="sub_header_enhance">Shopping List</div><button class="btn btn-danger" onclick="clear_list();"><i
               class="fas fa-trash"></i></button>
       <div class="list_container">
           <ul id="the_list">
@@ -601,7 +601,7 @@
       </div>
 
       <a href="../" target="_self">
-          <div class="home_button"><i class="fas fa-home"></i></div>
+          <div class="btn btn-primary"><i class="fas fa-home"></i></div>
       </a>
   </body>
 
