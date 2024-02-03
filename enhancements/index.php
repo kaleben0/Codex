@@ -307,12 +307,58 @@
           <div class="sub_header_enhance">Natural / Technology
             <div class="sub_sub_header">Dual Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Technology' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
           <div class="science_technology">
             <div class="sub_header_enhance">Science / Technology
               <div class="sub_sub_header">Dual Origin</div>
             </div>
+            <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Science-Technology' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
           </div>
 
         </div>
@@ -320,36 +366,174 @@
           <div class="sub_header_enhance">Mutation / Science
             <div class="sub_sub_header">Dual Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Mutation-Science' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
         <div class="mutation">
           <div class="sub_header_enhance">Mutation
             <div class="sub_sub_header">Single Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Mutation' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
         <div class="magic">
           <div class="sub_header_enhance">Magic
             <div class="sub_sub_header">Single Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Magic' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
         <div class="natural">
           <div class="sub_header_enhance">Natural
             <div class="sub_sub_header">Single Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Natural' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
         <div class="technology">
           <div class="sub_header_enhance">Technology
             <div class="sub_sub_header">Single Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Technology' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
         <div class="science">
           <div class="sub_header_enhance">Science
             <div class="sub_sub_header">Single Origin</div>
           </div>
+          <div class="enhance_body_display">
+
+<?php
+    include '../enhancements/enhancement_db.php';
+    $mysqli = new mysqli("localhost", $username, $password, $dbname);
+    $query = "SELECT * FROM enhancements WHERE origin_type='Science' AND origin='DO' ";
+    if ($result=$mysqli->query($query)){
+    while ($row=$result->fetch_assoc()){
+    $id = $row['id'];
+    $type= $row['type'];
+    $class= $row['class'];
+    $origin = $row['origin'];
+    $origin_type = $row['origin_type'];
+    $name = $row['name'];
+    $img_file = $row['img_file'];
+
+      echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
+        echo "<div class='enhance_text'>$name</div>";
+        echo "</div>";
+      }
+      $result->free();
+         }
+  ?>
         </div>
 
       </div>
