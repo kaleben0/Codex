@@ -331,7 +331,6 @@ body {
 	flex-flow: row wrap;
 	justify-content: right;
 	width: 350px;
-	height: 80px;
 	font-family: hero !important;
 	color: #FFFFFF;
 	border-radius: 35px;
@@ -358,7 +357,6 @@ body {
 	flex-flow: row wrap;
 	justify-content: left;
 	width: 350px;
-	height: 80px;
 	font-family: hero !important;
 	color: #FFFFFF;
 	border-radius: 35px;
