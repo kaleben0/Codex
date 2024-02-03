@@ -475,13 +475,8 @@ body {
 	top: 10px;
 	left: 13px;
 	position: absolute;
-	font-size: 1.7em;
 	margin-top: 10px;
 	margin-left: 5px;
-}
-
-.home_button:hover {
-	transform: translate(2px, -2px);
 }
 
 fa {
