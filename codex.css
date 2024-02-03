@@ -7,13 +7,17 @@
 
 @font-face {
 	font-family: redcircl;
-	src: url(./fonts/redcircl.ttf);
+	src: url(../fonts/redcircl.ttf);
 }
 
 @font-face {
 	font-family: hero;
 	src: url(../fonts/Hero-Regular.ttf);
 }
+
+*::after {
+	box-sizing:unset !important;
+  }
 
 a:link {
 	text-decoration: none;
