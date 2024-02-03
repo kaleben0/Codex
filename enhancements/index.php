@@ -161,10 +161,6 @@
           <div class="enhance_text">Immobilization
             Duration</div>
         </div>
-        <div class="enhance_display_menu intangibility" onclick="toggleintangibility()"><img src="./images/training/TO-Training-Intangibility-Duration.png">
-          <div class="enhance_text">Intangibility
-            Duration</div>
-        </div>
         <div class="enhance_display_menu interrupt" onclick="toggleinterrupt()"><img src="./images/training/TO-Training-Interrupt-Time.png">
           <div class="enhance_text">Interrupt
             Reduction</div>
@@ -203,7 +199,7 @@
           <div class="enhance_text">Taunt
             Duration</div>
         </div>
-        <div class="enhance_display_menu tohit_buff" onclick="toggletohit_buff()"><img src="./images/training/TO-Training-ToHit-Buffs.png">
+        <div class="enhance_display_menu tohit_buffs" onclick="toggletohit_buff()"><img src="./images/training/TO-Training-ToHit-Buffs.png">
           <div class="enhance_text">ToHit
             Buff</div>
         </div>
