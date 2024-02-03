@@ -268,6 +268,8 @@
       $name = $row['name'];
       $img_file = $row['img_file'];
 
+      
+
       echo "<div class='enhance_body_display'>";
         echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
           echo "<div class='enhance_text'>$name</div>";
