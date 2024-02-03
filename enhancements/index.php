@@ -341,7 +341,7 @@
 <?php
     include '../enhancements/enhancement_db.php';
     $mysqli = new mysqli("localhost", $username, $password, $dbname);
-    $query = "SELECT * FROM enhancements WHERE origin_type='Science-Technology' AND origin='DO' ";
+    $query = "SELECT * FROM enhancements WHERE origin_type='Technology-Science' AND origin='DO' ";
     if ($result=$mysqli->query($query)){
     while ($row=$result->fetch_assoc()){
     $id = $row['id'];
@@ -429,7 +429,7 @@
 <?php
     include '../enhancements/enhancement_db.php';
     $mysqli = new mysqli("localhost", $username, $password, $dbname);
-    $query = "SELECT * FROM enhancements WHERE origin_type='Magic' AND origin='DO' ";
+    $query = "SELECT * FROM enhancements WHERE origin_type='Magic' AND origin='SO' ";
     if ($result=$mysqli->query($query)){
     while ($row=$result->fetch_assoc()){
     $id = $row['id'];
@@ -458,7 +458,7 @@
 <?php
     include '../enhancements/enhancement_db.php';
     $mysqli = new mysqli("localhost", $username, $password, $dbname);
-    $query = "SELECT * FROM enhancements WHERE origin_type='Natural' AND origin='DO' ";
+    $query = "SELECT * FROM enhancements WHERE origin_type='Natural' AND origin='SO' ";
     if ($result=$mysqli->query($query)){
     while ($row=$result->fetch_assoc()){
     $id = $row['id'];
@@ -487,7 +487,7 @@
 <?php
     include '../enhancements/enhancement_db.php';
     $mysqli = new mysqli("localhost", $username, $password, $dbname);
-    $query = "SELECT * FROM enhancements WHERE origin_type='Technology' AND origin='DO' ";
+    $query = "SELECT * FROM enhancements WHERE origin_type='Technology' AND origin='SO' ";
     if ($result=$mysqli->query($query)){
     while ($row=$result->fetch_assoc()){
     $id = $row['id'];
@@ -516,7 +516,7 @@
 <?php
     include '../enhancements/enhancement_db.php';
     $mysqli = new mysqli("localhost", $username, $password, $dbname);
-    $query = "SELECT * FROM enhancements WHERE origin_type='Science' AND origin='DO' ";
+    $query = "SELECT * FROM enhancements WHERE origin_type='Science' AND origin='SO' ";
     if ($result=$mysqli->query($query)){
     while ($row=$result->fetch_assoc()){
     $id = $row['id'];
