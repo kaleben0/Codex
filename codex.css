@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: hero;
-	src: url(./fonts/Hero-Regular.ttf);
+	src: url(../fonts/Hero-Regular.ttf);
 }
 
 a:link {
@@ -44,7 +44,7 @@ a:hover {
 body {
 	background-color: #000;
 	color: #fff;
-	font-family: redcircl;
+	font-family: redcircl !important;
 	background-image: url('./images/city_back_blue.png');
 	background-attachment: fixed;
 	background-position: center top;
@@ -108,7 +108,7 @@ body {
 	padding: 20px 10px 10px 20px;
 	display: flex;
 	flex-flow: row wrap;
-	font-family: hero;
+	font-family: hero !important;
 	justify-content: space-evenly;
 	width: 275px;
 	color: #FFFFFF;
@@ -143,7 +143,7 @@ body {
 	padding-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: hero;
+	font-family: hero !important;
 	text-align: center;
 	text-shadow: 2px 2px #000;
 }
@@ -154,7 +154,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	font-family: hero;
+	font-family: hero !important;
 	text-shadow: 2px 2px #000;
 }
 
@@ -165,7 +165,7 @@ body {
 	margin-bottom: 10px;
 	padding: 20px 5px 5px 0px;
 	display: flex;
-	font-family: hero;
+	font-family: hero !important;
 	flex-direction: row;
 	flex-wrap: wrap;
 	flex-flow: row wrap;
@@ -199,7 +199,7 @@ body {
 	flex-flow: row wrap;
 	justify-content: center;
 	width: 145px;
-	font-family: hero;
+	font-family: hero !important;
 	color: #FFFFFF;
 	border-radius: 35px;
 	background: linear-gradient(#000428, #004e92);
@@ -228,7 +228,7 @@ body {
 	padding: 20px 10px 10px 20px;
 	display: flex;
 	flex-flow: row wrap;
-	font-family: hero;
+	font-family: hero !important;
 	justify-content: space-evenly;
 	width: 275px;
 	color: #FFFFFF;
@@ -253,7 +253,7 @@ body {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: hero;
+	font-family: hero !important;
 	text-shadow: 2px 2px #000;
 }
 
@@ -280,7 +280,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	font-family: hero;
+	font-family: hero !important;
 	text-shadow: 2px 2px #000;
 }
 
@@ -328,7 +328,7 @@ body {
 	justify-content: right;
 	width: 350px;
 	height: 80px;
-	font-family: hero;
+	font-family: hero !important;
 	color: #FFFFFF;
 	border-radius: 35px;
 	background: linear-gradient(#000428, #004e92);
@@ -355,7 +355,7 @@ body {
 	justify-content: left;
 	width: 350px;
 	height: 80px;
-	font-family: hero;
+	font-family: hero !important;
 	color: #FFFFFF;
 	border-radius: 35px;
 	background: linear-gradient(#000428, #004e92);
@@ -406,7 +406,7 @@ body {
 	background-color: #000;
 	max-width: 400px;
 	font-size: 17px;
-	font-family: hero;
+	font-family: hero !important;
 	border-radius: 10px;
 	min-height: 30px;
 }
@@ -421,7 +421,7 @@ body {
 	padding: 20px 10px 10px 20px;
 	display: flex;
 	flex-flow: row wrap;
-	font-family: hero;
+	font-family: hero !important;
 	justify-content: space-evenly;
 	width: 340px;
 	height: 60px;
@@ -447,7 +447,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	font-family: hero;
+	font-family: hero !important;
 	text-shadow: 2px 2px #000;
 }
 
