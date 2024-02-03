@@ -257,7 +257,7 @@
   <?php
       include '../enhancements/enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
-      $query = "SELECT * FROM enhancement WHERE origin_type='Magic-Mutation' AND origin='DO' ";
+      $query = "SELECT * FROM enhancements WHERE origin_type='Magic-Mutation' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
       $id = $row['id'];
