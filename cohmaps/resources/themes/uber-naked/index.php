@@ -60,7 +60,7 @@
                  }
         function changeImage3()
         {  
-		$('.menu_block').css("background", images3[x]);
+		$('#galleryList li').css("background", images3[x]);
 		if ( x == 1 ) 
                 {
                     document.getElementById("paragon").src='../images/arachnos.png';
