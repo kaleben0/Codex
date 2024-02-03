@@ -363,5 +363,6 @@ function toggletechnology() {
 
 function clear_page() {
     $('.magic_mutation, .natural_magic, .natural_technology, .science_technology, .mutation_science, .mutation, .magic, .natural, .science, .technology,.accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt,.tohit_buffs').show();
+    clear_list();
 }
 
