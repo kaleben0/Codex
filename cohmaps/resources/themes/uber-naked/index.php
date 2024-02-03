@@ -21,13 +21,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/style.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <?php echo $gallery->getColorboxStyles(1); ?>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <?php echo $gallery->getColorboxScripts(); ?>
-
-    <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
         var images = new Array()
         var images2 = new Array()
         var images3 = new Array()
@@ -81,6 +75,10 @@
                 }
      }
    </script>
+    <?php echo $gallery->getColorboxStyles(1); ?>
+    <?php echo $gallery->getColorboxScripts(); ?>
+    <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
+    
 
 </head>
 
