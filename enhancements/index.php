@@ -601,7 +601,7 @@
       </div>
 
       <a href="../" target="_self">
-          <div class="btn btn-primary"><i class="fas fa-home"></i></div>
+          <div class="btn btn-primary home_button"><i class="fas fa-home"></i></div>
       </a>
   </body>
 
