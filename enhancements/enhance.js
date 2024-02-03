@@ -5,7 +5,7 @@ function toggleaccuracy() {
         location.reload();
     }
     else {
-        $(".accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -14,7 +14,7 @@ function toggleaccuracy_debuff() {
         location.reload();
     }
     else {
-        $(".accuracy, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -23,7 +23,7 @@ function toggleconfusion() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -32,7 +32,7 @@ function toggledamage() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -41,7 +41,7 @@ function toggledefence_buff() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -50,7 +50,7 @@ function toggledefence_debuff() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -59,7 +59,7 @@ function toggledisorient() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -68,7 +68,7 @@ function toggleendurance_modification() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -77,7 +77,7 @@ function toggleendurance_reduction() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -87,7 +87,7 @@ function togglefear() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -96,7 +96,7 @@ function togglefly() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -105,7 +105,7 @@ function toggleheal() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -114,7 +114,7 @@ function togglehold() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -124,7 +124,7 @@ function toggleimmobilization() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -133,7 +133,7 @@ function toggleintangibility() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -143,7 +143,7 @@ function toggleinterrupt() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -152,7 +152,7 @@ function togglejump() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -161,7 +161,7 @@ function toggleknockback() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -171,7 +171,7 @@ function togglerange() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .recharge, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -180,7 +180,7 @@ function togglerecharge() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .resist_damage, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -190,7 +190,7 @@ function toggleresist_damage() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .run, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .run, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -200,7 +200,7 @@ function togglerun() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .sleep, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .sleep, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -210,7 +210,7 @@ function togglesleep() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .slow, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .slow, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -220,7 +220,7 @@ function toggleslow() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .taunt, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .taunt, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -230,7 +230,7 @@ function toggletaunt() {
         location.reload();
     }
     else {
-        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .tohit_buff,.enhance_container").toggle();
+        $(".accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .tohit_buff, .enhance_container").toggle();
     }
 }
 
@@ -362,6 +362,6 @@ function toggletechnology() {
 
 
 function clear_page() {
-    $('.magic_mutation, .natural_magic, .natural_technology, .science_technology, .mutation_science, .mutation, .magic, .natural, .science, .technology,.accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt,.tohit_buff,.enhance_container').show();
+    $('.magic_mutation, .natural_magic, .natural_technology, .science_technology, .mutation_science, .mutation, .magic, .natural, .science, .technology,.accuracy, .accuracy_deBuff, .confusion, .damage, .defence_buff, .defence_debuff, .disorient, .endurance_modification, .endurance_reduction, .fear, .fly, .heal, .hold, .immobilization, .interrupt, .jump, .knockback, .range, .recharge, .resist_damage, .run, .sleep, .slow, .taunt,.tohit_buff, .enhance_container').show();
 }
 
