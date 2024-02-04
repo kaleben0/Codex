@@ -1,28 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
-<link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/images/favicon.ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#37474f" />
-<meta name="mobile-web-app-capable" content="yes">
-<title>City of Heroes - Codex</title>
-<link rel="manifest" href="manifest.json">
-<link rel="icon" sizes="72x72" href="../images/icons/icon-72x72.png">
-<link rel="icon" sizes="96x96" href="../images/icons/icon-96x96.png">
-<link rel="icon" sizes="128x128" href="../images/icons/icon-128x128.png">
-<link rel="icon" sizes="144x144" href="../images/icons/icon-144x144.png">
-<link rel="icon" sizes="152x152" href="../images/icons/icon-152x152.png">
-<link rel="icon" sizes="192x192" href="../images/icons/icon-192x192.png">
-<link rel="icon" sizes="384x384" href="../images/icons/icon-384x384.png">
-<link rel="icon" sizes="512x512" href="../images/icons/icon-512x512.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../codex.css">
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/style.css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#004e92">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-control" content="NO-STORE">
+    <meta name="robots" content="noindex, nofollow">
+    <title>City of Heroes - Codex</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="72x72" href="../images/icons/icon-72x72.png">
+    <link rel="icon" sizes="96x96" href="../images/icons/icon-96x96.png">
+    <link rel="icon" sizes="128x128" href="../images/icons/icon-128x128.png">
+    <link rel="icon" sizes="144x144" href="../images/icons/icon-144x144.png">
+    <link rel="icon" sizes="152x152" href="../images/icons/icon-152x152.png">
+    <link rel="icon" sizes="192x192" href="../images/icons/icon-192x192.png">
+    <link rel="icon" sizes="384x384" href="../images/icons/icon-384x384.png">
+    <link rel="icon" sizes="512x512" href="../images/icons/icon-512x512.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/codex.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script language="javascript" type="text/javascript">
         var images = new Array()
         var images2 = new Array()
