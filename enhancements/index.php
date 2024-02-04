@@ -312,7 +312,7 @@
         $type_label = $row['type_label'];
 
           echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
-            echo "<div class='enhance_text'>$name<br/><span class='enhance_sub_text'>$origin_type_label-$type_label</span></div><br/>";
+            echo "<div class='enhance_text'>$name<br/><span class='enhance_sub_text'>$origin_type_label<br/>$type_label</span></div><br/>";
             echo "</div>";
           }
           $result->free();
