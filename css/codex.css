@@ -430,7 +430,7 @@ body {
 	font-family: hero !important;
 	justify-content: space-evenly;
 	width: 340px;
-	height: 60px;
+	height: 80px;
 	color: #FFFFFF;
 	border-radius: 70px;
 	background: linear-gradient(#000428, #004e92);
@@ -449,7 +449,7 @@ body {
 }
 
 .sub_menu_text_tools {
-	font-size: 27px;
+	font-size: 23px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
