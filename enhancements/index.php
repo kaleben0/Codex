@@ -107,7 +107,7 @@
     <div class="page_header" onclick="location.reload();">Training/DO/SO<br />Enhancements</div>
     <hr />
     <div class="sub_header_enhance">Shopping List</div>
-    <div class="list_container">
+    <div class="list_container_btn">
         <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
     </div>
     <div class="list_container">
