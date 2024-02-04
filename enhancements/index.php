@@ -106,10 +106,10 @@
       <hr />
       <div class="sub_header_enhance">Shopping List</div>
       <div class="list_container">
+      <button class="btn btn-danger" onclick="clear_list();"><i
+              class="fas fa-trash"></i></button>
           <ul id="the_list">
           </ul>
-          <button class="btn btn-danger" onclick="clear_list();"><i
-              class="fas fa-trash"></i></button>
       </div>
       <div class="training">
           <br />
