@@ -53,7 +53,7 @@ body {
 	background-color: #000;
 	color: #fff;
 	font-family: redcircl !important;
-	background-image: url('./images/city_back_blue.png');
+	background-image: url('../images/city_back_blue.png');
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: no-repeat;
