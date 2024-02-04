@@ -109,7 +109,9 @@
         var iconElement = document.getElementById('copylist');
         iconElement.classList.remove('fa-copy');
         iconElement.classList.add('fa-square-check');
-
+        setTimeout(myFunction, 15000);
+        iconElement.classList.remove('fa-square-check');
+        iconElement.classList.add('fa-copy');
     }
     </script>
 </head>
