@@ -310,8 +310,7 @@
         $img_file = $row['img_file'];
 
           echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
-            echo "<div class='enhance_text'>$name</div><br/>";
-            echo "<div class='enhance_sub_text'>$type</div>";
+            echo "<div class='enhance_text'>$name<br/><span class='enhance_sub_text'>$type</span></div><br/>";
             echo "</div>";
           }
           $result->free();
