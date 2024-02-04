@@ -107,6 +107,10 @@
         }).catch(function(err) {
             console.error('Unable to copy list to clipboard', err);
         });
+        var iconElement = document.getElementById('myIcon');
+            iconElement.classList.remove('fa-copy');
+            iconElement.classList.add('fa-square-check');
+
     }
     </script>
 </head>
@@ -126,13 +130,14 @@
         </div>
         <br />
         <div class="float-start">
-            <button class="btn btn-success" onclick="copylisttoclipboard();"><i class="far fa-copy"></i></button>
+            <button class="btn btn-success" onclick="copylisttoclipboard();"><i class="far fa-copy" id="copy"></i></button>
         </div>
         <div class="float-end">
             <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
         </div>
         <br />
     </div>
+    <hr/>
     <div class="training">
         <br />
         <div class="sub_header_enhance">Types</div>
