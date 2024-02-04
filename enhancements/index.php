@@ -104,9 +104,9 @@
             id="switch"></div>
     <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
     <hr />
-    <div class="page_header" onclick="location.reload();">Enhancement<br/><span class="enhance_sub_text">Shopping List</span></div>
+    <div class="page_header" onclick="location.reload();">Enhancement Shopping List</div>
     <hr />
-    <div class="sub_header_enhance">Shopping List</div>
+    <div class="sub_header_enhance">List</div>
 
     <div class="list_container">
         <ul id="the_list">
