@@ -125,10 +125,10 @@
             </ul>
         </div>
         <br />
-        <div class="list_container_btn" style="margin-left:0">
+        <div class="float-start">
             <button class="btn btn-success" onclick="copylisttoclipboard();"><i class="far fa-copy"></i></button>
         </div>
-        <div class="list_container_btn" style="margin-right:0">
+        <div class="float-end">
             <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
         </div>
 

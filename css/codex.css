@@ -419,13 +419,6 @@ body {
 	min-height: 30px;
 }
 
-.list_container_btn {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: right;
-	max-width: 400px;
-}
-
 /* Tools */
 
 .tools_display {
