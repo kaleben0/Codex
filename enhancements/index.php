@@ -97,6 +97,18 @@
         $('#the_list').empty();
     }
     </script>
+     <script>
+        function copylisttoclipboard() {
+            var list = document.getElementById('the_list');
+            var listText = list.innerText;
+
+            navigator.clipboard.writeText(listText).then(function() {
+                console.log('List copied to clipboard');
+            }).catch(function(err) {
+                console.error('Unable to copy list to clipboard', err);
+            });
+        }
+    </script>
 </head>
 
 <body id="switch2">
@@ -112,8 +124,11 @@
         <ul id="the_list">
         </ul>
     </div>
-    <div class="list_container_btn">
+    <div class="list_container_btn float-end">
         <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
+    </div>
+    <div class="list_container_btn float-start">
+        <button class="btn btn-success" onclick="copylisttoclipboard();"><i class="far fa-copy"></i></button>
     </div>
     <div class="training">
         <br />
