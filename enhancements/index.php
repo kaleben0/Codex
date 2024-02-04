@@ -311,6 +311,7 @@
 
           echo "<div class='enhance_display $class' value='$name'><img src='../enhancements/images/$img_file'>";
             echo "<div class='enhance_text'>$name</div>";
+            echo "<div class='enhance_text'><small>$type</small></div>";
             echo "</div>";
           }
           $result->free();
