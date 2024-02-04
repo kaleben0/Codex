@@ -119,12 +119,13 @@
     <div class="page_header" onclick="location.reload();">Enhancement Shopping List</div>
     <hr />
     <div style="max-width:500px;" class="mx-auto">
+    <div class="sub_header_enhance">List</div>
+        <br/>
         <div class="list_container">
             <ul id="the_list">
             </ul>
         </div>
-        <div class="sub_header_enhance">List</div>
-        <br/>
+
         <div class="list_container_btn" style="margin-right:0">
             <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
         </div>
