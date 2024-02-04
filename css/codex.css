@@ -58,7 +58,7 @@ body {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transition: background 200ms ease-in .5s;
+	transition: background-image 200ms ease-in .5s;
 }
 
 .page_header {
@@ -122,7 +122,7 @@ body {
 	color: #FFFFFF;
 	border-radius: 70px;
 	background: linear-gradient(#000428, #004e92);
-	transition: background 5s ease-in-out;
+	transition: background-image 5s ease-in-out;
 }
 
 .menu_block:hover {
@@ -242,7 +242,7 @@ body {
 	color: #FFFFFF;
 	border-radius: 70px;
 	background: linear-gradient(#000428, #004e92);
-	transition: background 5s ease-in-out
+	transition: background-image 5s ease-in-out
 }
 
 .sb_display:hover {
@@ -441,7 +441,7 @@ body {
 	color: #FFFFFF;
 	border-radius: 70px;
 	background: linear-gradient(#000428, #004e92);
-	transition: background 5s ease-in-out;
+	transition: background-image 5s ease-in-out;
 }
 
 .tools_display:hover {
