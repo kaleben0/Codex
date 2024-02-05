@@ -110,7 +110,7 @@
         var iconElement2 = document.getElementById('copied');
         iconElement.classList.remove('fa-copy');
         iconElement.classList.add('fa-square-check');
-        iconElement2.style.display = '';
+        iconElement2.style.display = 'inline';
         setTimeout(function() {
             iconElement.classList.remove('fa-square-check');
             iconElement.classList.add('fa-copy');
