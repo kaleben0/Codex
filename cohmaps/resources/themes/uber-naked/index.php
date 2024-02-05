@@ -88,12 +88,12 @@
     </script>
     <?php echo $gallery->getColorboxStyles(1); ?>
     <?php echo $gallery->getColorboxScripts(); ?>
-    <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
 </head>
 
 <body id="switch2" style="max-width:unset;">
     <div>
         <div class="main_title"><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
+        <div class="btn btn-danger home_button2" onclick="force_change();"><i class="fa-regular fa-star"></i></div>
         <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
         <br />
         <br />
@@ -133,7 +133,7 @@
     <a href="../" target="_self">
         <div class="btn btn-primary home_button"><i class="fas fa-home"></i></div>
     </a>
-    <div class="btn btn-danger home_button2" onclick="force_change();"><i class="fa-regular fa-star"></i></div>
+
 </body>
 
 </html>
