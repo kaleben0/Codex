@@ -7,12 +7,12 @@
 
 @font-face {
 	font-family: redcirl;
-	src: url(../fonts/Red-Circle-Regular.ttf) format('ttf');
+	src: url(../fonts/Red-Circle-Regular.ttf);
 }
 
 @font-face {
 	font-family: hero;
-	src: url(../fonts/Hero-Regular.ttf) format('ttf');
+	src: url(../fonts/Hero-Regular.ttf);
 }
 
 *::after {
