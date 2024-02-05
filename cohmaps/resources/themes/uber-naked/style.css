@@ -221,28 +221,6 @@ body {
     /* IE7 */
 }
 
-.home_button2 {
-    width: 40px;
-    height: 31px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #fff;
-    background: linear-gradient(to bottom, #000428, #004e92);
-    top: 19px;
-    left: 13px;
-    position: absolute;
-    font-size: 1.7em;
-    border-radius: 10px;
-    margin-top: 1px;
-    margin-left: 5px;
-    display: none;
-    padding-top: 4px;
-
-}
-
-.home_button2:hover {
-    transform: translate(2px, -2px);
-}
 
 fa {
     margin-top: 10px;
