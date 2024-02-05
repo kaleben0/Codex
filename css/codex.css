@@ -184,7 +184,7 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	color: #FFFFFF;
-	width: 250px;
+	width: 200px;
 	border-radius: 35px;
 	background: linear-gradient(#000428, #004e92);
 }
