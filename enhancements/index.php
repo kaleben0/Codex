@@ -62,7 +62,7 @@
     }
 
     function changeImage3() {
-        $('.enhance_display_menu').css("background", images3[x]);
+        $('.enhance_display_menu,.enhance_display').css("background", images3[x]);
         if (x == 1) {
             document.getElementById("paragon").src = '../images/arachnos.png';
         }
