@@ -651,6 +651,7 @@
     <a href="../" target="_self">
         <div class="btn btn-primary home_button"><i class="fas fa-home"></i></div>
     </a>
+    <div class="btn btn-danger home_button2" onclick="force_change();" ><i class="fa-regular fa-star"></i></div>
 </body>
 
 </html>
