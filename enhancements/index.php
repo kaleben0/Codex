@@ -122,11 +122,10 @@
 </head>
 
 <body id="switch2">
-    <div class="main_title" ><img src="../images/coh_large.png" width="256" height="256"
-            id="switch"></div>
+    <div class="main_title"><img src="../images/coh_large.png" width="256" height="256" id="switch"></div>
     <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
     <hr />
-    <div class="page_header" onclick="location.reload();">Enhancement<br/><small>Shopping List</small></div>
+    <div class="page_header" onclick="location.reload();">Enhancement<br /><small>Shopping List</small></div>
     <hr />
     <div style="max-width: 350px;" class="mx-auto">
         <div class="sub_header_enhance">List</div>
@@ -138,10 +137,11 @@
         <div class="float-start">
             <button class="btn btn-success" onclick="copylisttoclipboard();"><i class="far fa-copy"
                     id="copylist"></i></button>
+            <span id="copied">Copied!</span>
         </div>
         <div class="float-end">
             <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
-            <span id="copied">Copied!</span>
+
         </div>
 
     </div>
@@ -651,7 +651,7 @@
     <a href="../" target="_self">
         <div class="btn btn-primary home_button"><i class="fas fa-home"></i></div>
     </a>
-    <div class="btn btn-danger home_button2" onclick="force_change();" ><i class="fa-regular fa-star"></i></div>
+    <div class="btn btn-danger home_button2" onclick="force_change();"><i class="fa-regular fa-star"></i></div>
 </body>
 
 </html>
