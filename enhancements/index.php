@@ -349,9 +349,6 @@
         </div>
     </div>
 
-    <br />
-
-
     <div class="natural_magic">
         <div class="sub_header_enhance">Natural / Magic
             <div class="sub_sub_header">Dual Origin</div>
@@ -384,7 +381,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="natural_technology">
         <div class="sub_header_enhance">Natural / Technology
             <div class="sub_sub_header">Dual Origin</div>
@@ -416,7 +413,6 @@
     ?>
         </div>
     </div>
-    <br />
     <div class="science_technology">
         <div class="sub_header_enhance">Science / Technology
             <div class="sub_sub_header">Dual Origin</div>
@@ -448,7 +444,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     </div>
     <div class="mutation_science">
         <div class="sub_header_enhance">Mutation / Science
@@ -481,7 +477,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="mutation">
         <div class="sub_header_enhance">Mutation
             <div class="sub_sub_header">Single Origin</div>
@@ -513,7 +509,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="magic">
         <div class="sub_header_enhance">Magic
             <div class="sub_sub_header">Single Origin</div>
@@ -545,7 +541,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="natural">
         <div class="sub_header_enhance">Natural
             <div class="sub_sub_header">Single Origin</div>
@@ -577,7 +573,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="technology">
         <div class="sub_header_enhance">Technology
             <div class="sub_sub_header">Single Origin</div>
@@ -609,7 +605,7 @@
     ?>
         </div>
     </div>
-    <br />
+
     <div class="science">
         <div class="sub_header_enhance">Science
             <div class="sub_sub_header">Single Origin</div>
