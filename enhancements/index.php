@@ -119,7 +119,7 @@
 </head>
 
 <body id="switch2">
-    <div class="main_title" onclick="force_change();"><img src="../images/coh_large.png" width="256" height="256"
+    <div class="main_title" ><img src="../images/coh_large.png" width="256" height="256"
             id="switch"></div>
     <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
     <hr />
