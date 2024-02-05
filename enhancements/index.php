@@ -112,7 +112,7 @@
         setTimeout(function() {
             iconElement.classList.remove('fa-square-check');
             iconElement.classList.add('fa-copy');
-        }, 15000);
+        }, 10000);
 
     }
     </script>
