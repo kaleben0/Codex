@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-
 @font-face {
 	font-family: redcirl;
 	src: url(../fonts/Red-Circle-Regular.ttf);

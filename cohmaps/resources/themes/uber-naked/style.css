@@ -1,28 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
 /* -------------------------------------------------------------------------- */
 /* -----| GALLERY LIST |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 @font-face {
-    font-family: redcircl;
-    src: url(../fonts/redcircl.ttf);
+	font-family: redcirl;
+	src: url(../fonts/Red-Circle-Regular.ttf);
 }
 
 @font-face {
-    font-family: hero;
-    src: url(../fonts/Hero-Regular.ttf);
+	font-family: hero;
+	src: url(../fonts/Hero-Regular.ttf);
 }
 
-
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: redcircl;
-    margin-left: auto;
+	background-color: #000;
+	color: #fff;
+	font-family: redcirl, sans-serif !important;
+	background-image: url('../images/city_back_blue.png');
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: background-image 200ms ease-in .5s;
+	line-height: 1 !important;
 }
 
 .pictitle {
