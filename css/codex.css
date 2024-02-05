@@ -15,6 +15,10 @@
 	src: url(../fonts/Hero-Regular.ttf);
 }
 
+#copied {
+	display: none;
+}
+
 *::after {
 	box-sizing: none !important;
 }

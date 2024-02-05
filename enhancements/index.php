@@ -107,11 +107,14 @@
             console.error('Unable to copy list to clipboard', err);
         });
         var iconElement = document.getElementById('copylist');
+        var iconElement2 = document.getElementById('copied');
         iconElement.classList.remove('fa-copy');
         iconElement.classList.add('fa-square-check');
+        iconElement2.style.display = '';
         setTimeout(function() {
             iconElement.classList.remove('fa-square-check');
             iconElement.classList.add('fa-copy');
+            iconElement2.style.display = 'none';
         }, 10000);
 
     }
@@ -123,7 +126,7 @@
             id="switch"></div>
     <div class="sub_title"><img src="../images/codex.png" width="200" height="45"></div>
     <hr />
-    <div class="page_header" onclick="location.reload();">Enhancement Shopping List</div>
+    <div class="page_header" onclick="location.reload();">Enhancement<br/><small>Shopping List</small></div>
     <hr />
     <div style="max-width: 350px;" class="mx-auto">
         <div class="sub_header_enhance">List</div>
@@ -138,6 +141,7 @@
         </div>
         <div class="float-end">
             <button class="btn btn-danger" onclick="clear_list();"><i class="fas fa-trash"></i></button>
+            <span id="copied">Copied!</span>
         </div>
 
     </div>
