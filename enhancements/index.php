@@ -328,7 +328,7 @@
         <div class="enhance_body_display">
 
             <?php
-        include '../enhancements/enhancement_db.php';
+        include 'enhancement_db.php';
         $mysqli = new mysqli("localhost", $username, $password, $dbname);
         $query = "SELECT * FROM enhancements WHERE origin_type='Magic-Mutation' AND origin='DO' ";
         if ($result=$mysqli->query($query)){
@@ -361,7 +361,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Magic' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
@@ -393,7 +393,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Technology' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
@@ -424,7 +424,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Technology-Science' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
@@ -457,7 +457,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Mutation-Science' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
@@ -489,7 +489,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Mutation' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
@@ -521,7 +521,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Magic' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
@@ -553,7 +553,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
@@ -585,7 +585,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Technology' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
@@ -617,7 +617,7 @@
         <div class="enhance_body_display">
 
             <?php
-      include '../enhancements/enhancement_db.php';
+      include 'enhancement_db.php';
       $mysqli = new mysqli("localhost", $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Science' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
