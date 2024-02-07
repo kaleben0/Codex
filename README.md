@@ -2,6 +2,8 @@
 
 A (mobile-friendly) Progressive Web App for City of Heroes
 
+Hosted here : [https://coh.rf.gd/](https://coh.rf.gd/)
+
 ![image](./images/main_screen.png)
 
 - VidiotMaps
@@ -39,3 +41,8 @@ A (mobile-friendly) Progressive Web App for City of Heroes
   - Clone repository
   - Import codex.sql into a MYSQL db
   - Update /enchancements/enhancement_db.php with DB information
+
+## Backstory
+I put this together back when City of Heroes re-emerged in 2017. 
+My coding skills were still pretty basic when I made it, but have grown somewhat since then.
+I still plan to tinker with it and clean up some of the repetitive CSS. 
