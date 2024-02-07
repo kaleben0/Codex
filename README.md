@@ -34,4 +34,3 @@ A (mobile-friendly) Progressive Web App for City of Heroes
   - Clone repository
   - Import codex.sql into a MYSQL db
   - Update /enchancements/enhancement_db.php with DB information
-  
