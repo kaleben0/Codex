@@ -24,6 +24,11 @@ A (mobile-friendly) Progressive Web App for City of Heroes
   - UberGallery - The simple PHP photo gallery - Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
   - FontAwesome - [https://fontawesome.com/](https://fontawesome.com/)
   - Bootstrap - [https://getbootstrap.com](https://getbootstrap.com)
+  - HTML
+  - CSS
+  - Javascript
+  - JQuery
+  - PHP
 
 - Requirements
   - Apache2 or Nginx
