@@ -329,7 +329,7 @@
 
             <?php
         include 'enhancement_db.php';
-        $mysqli = new mysqli("localhost", $username, $password, $dbname);
+        $mysqli = new mysqli($servername, $username, $password, $dbname);
         $query = "SELECT * FROM enhancements WHERE origin_type='Magic-Mutation' AND origin='DO' ";
         if ($result=$mysqli->query($query)){
         while ($row=$result->fetch_assoc()){
@@ -362,7 +362,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Magic' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -394,7 +394,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural-Technology' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -425,7 +425,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Technology-Science' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -458,7 +458,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Mutation-Science' AND origin='DO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -490,7 +490,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Mutation' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -522,7 +522,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Magic' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -554,7 +554,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Natural' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -586,7 +586,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Technology' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
@@ -618,7 +618,7 @@
 
             <?php
       include 'enhancement_db.php';
-      $mysqli = new mysqli("localhost", $username, $password, $dbname);
+      $mysqli = new mysqli($servername, $username, $password, $dbname);
       $query = "SELECT * FROM enhancements WHERE origin_type='Science' AND origin='SO' ";
       if ($result=$mysqli->query($query)){
       while ($row=$result->fetch_assoc()){
