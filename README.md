@@ -19,7 +19,7 @@ Hosted here : [https://coh.rf.gd/](https://coh.rf.gd/)
   - City of Heroes - Comics & Fanzines
   - City of Heroes - Game Manuals
   - City of Heroes - Story Bibles
-  - Links to Homecoming & Rebirth Sites
+  - Links to COH Servers
   - Link to original Paragon Wiki
 
 - Software Used :
