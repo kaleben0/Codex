@@ -23,7 +23,7 @@ Hosted here : [https://coh.rf.gd/](https://coh.rf.gd/)
   - Link to The Original Paragon Wiki
 
 - Software Used :
-  - UberGallery - The simple PHP photo gallery - Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
+  - UberGallery - The simple PHP photo gallery - Created by [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
   - FontAwesome - [https://fontawesome.com/](https://fontawesome.com/)
   - Bootstrap - [https://getbootstrap.com](https://getbootstrap.com)
   - HTML
@@ -33,7 +33,7 @@ Hosted here : [https://coh.rf.gd/](https://coh.rf.gd/)
   - PHP
 
 - Requirements
-  - Apache2 or Nginx
+  - Apache or Nginx
   - MySQL
   - PHP 7.4+
 
